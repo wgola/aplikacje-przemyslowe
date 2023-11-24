@@ -21,11 +21,6 @@ public class UsersController {
         User user = new User(2, "Artur", 29, User.UserType.ADMIN, startDate);
         model.addAttribute("user", user);
 
-        long diffInMillies = Math.abs(startDate.getTime() - new Date().getTime());
-        long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
-
-        model.addAttribute("daysFromRegister", diff);
-
         return "home";
     }
 }

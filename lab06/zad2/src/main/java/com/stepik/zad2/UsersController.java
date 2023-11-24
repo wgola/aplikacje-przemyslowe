@@ -4,7 +4,6 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,11 +19,6 @@ public class UsersController {
         Date startDate = df.parse(startDateString);
         User user = new User(2, "Artur", 34, User.UserType.ADMIN, startDate);
         model.addAttribute("user", user);
-
-        long diffInMillies = Math.abs(startDate.getTime() - new Date().getTime());
-        long diff = TimeUnit.DAYS.convert(diffInMillies, TimeUnit.MILLISECONDS);
-
-        model.addAttribute("daysFromRegister", diff);
 
         return "home";
     }

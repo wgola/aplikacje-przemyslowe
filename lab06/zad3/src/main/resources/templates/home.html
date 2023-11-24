@@ -35,10 +35,15 @@
       </p>
     </div>
     <hr />
-    <div th:if="${daysFromRegister > 200 && user.age < 30}">
+    <div
+      th:with="daysFromRegister=${T(java.time.Duration).between(user.registrationDate.toInstant().atZone(T(java.time.ZoneId).systemDefault()).toLocalDate().atStartOfDay(), T(java.time.LocalDate).now().atStartOfDay()).toDays()}"
+      th:if="${daysFromRegister > 200 && user.age < 30}"
+    >
       <p>Witaj <span th:text="${user.name}" />!</p>
       <p>
-        od Twojej rejestracji minęło <span th:text="${daysFromRegister}" /> dni.
+        od Twojej rejestracji minęło
+        <span th:text="${daysFromRegister}" />
+        dni.
       </p>
     </div>
   </body>

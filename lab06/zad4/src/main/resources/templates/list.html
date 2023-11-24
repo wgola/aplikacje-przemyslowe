@@ -6,7 +6,33 @@
   </head>
   <body>
     <div>
-      <p th:text="${users.size()}"></p>
+      <table>
+        <thead>
+          <th>ID</th>
+          <th>Imię</th>
+          <th>Wiek</th>
+          <th>Typ</th>
+          <th>Data rejestracji</th>
+          <th>Ilość dni od rejestracji</th>
+        </thead>
+        <tr th:each="user: ${users}">
+          <td th:text="${user.id}" />
+          <td th:text="${user.name}" />
+          <td th:text="${user.age}" />
+          <td th:switch="${#strings.toString(user.userType)}">
+            <span th:case="'GUEST'">Gość</span>
+            <span th:case="'REGISTERED'">Zarejestrowany</span>
+            <span th:case="'ADMIN'">Administrator</span>
+          </td>
+          <td
+            th:text="${#dates.format(user.registrationDate, 'yyyy-MM-dd HH:mm')}"
+          />
+          <td
+            th:with="register=${user.registrationDate.toInstant().atZone(T(java.time.ZoneId).systemDefault()).toLocalDate().atStartOfDay()}, today=${T(java.time.LocalDate).now().atStartOfDay()}"
+            th:text="${T(java.time.Duration).between(register, today).toDays()}"
+          />
+        </tr>
+      </table>
     </div>
   </body>
 </html>
