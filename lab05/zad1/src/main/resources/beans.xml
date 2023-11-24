@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="person1" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Jillian"/>
+        <constructor-arg name="lastName" value="Palethorpe"/>
+        <constructor-arg name="email" value="jpalethorpe0@accuweather.com"/>
+        <constructor-arg name="companyName" value="Layo"/>
+    </bean>
+
+    <bean id="person2" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Mohandas"/>
+        <constructor-arg name="lastName" value="Branchet"/>
+        <constructor-arg name="email" value="mbranchet1@marriott.com"/>
+        <constructor-arg name="companyName" value="Gigabox"/>
+    </bean>
+
+    <bean id="person3" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Philly"/>
+        <constructor-arg name="lastName" value="Guyton"/>
+        <constructor-arg name="email" value="pguyton2@shareasale.com"/>
+        <constructor-arg name="companyName" value="Quatz"/>
+    </bean>
+
+    <bean id="person4" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Kirsteni"/>
+        <constructor-arg name="lastName" value="Bentham3"/>
+        <constructor-arg name="email" value="kbentham3@loc.gov"/>
+        <constructor-arg name="companyName" value="Quaxo"/>
+    </bean>
+
+    <bean id="person5" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Cosetta"/>
+        <constructor-arg name="lastName" value="Rolfi"/>
+        <constructor-arg name="email" value="crolfi4@photobucket.com"/>
+        <constructor-arg name="companyName" value="Riffwire"/>
+    </bean>
+
+    <bean id="person6" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Hedvig"/>
+        <constructor-arg name="lastName" value="Firminger"/>
+        <constructor-arg name="email" value="hfirminger5@netscape.com"/>
+        <constructor-arg name="companyName" value="Quire"/>
+    </bean>
+
+    <bean id="person7" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Lorna"/>
+        <constructor-arg name="lastName" value="Caseley"/>
+        <constructor-arg name="email" value="lcaseley6@illinois.edu"/>
+        <constructor-arg name="companyName" value="Skinix"/>
+    </bean>
+
+    <bean id="person8" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Arty"/>
+        <constructor-arg name="lastName" value="Nesey"/>
+        <constructor-arg name="email" value="anesey7@washington.edu"/>
+        <constructor-arg name="companyName" value="Dabvine"/>
+    </bean>
+
+    <bean id="person9" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Dugald"/>
+        <constructor-arg name="lastName" value="Fechnie"/>
+        <constructor-arg name="email" value="dfechnie8@feedburner.com"/>
+        <constructor-arg name="companyName" value="Twitterbridge"/>
+    </bean>
+
+    <bean id="person11" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Kamilah"/>
+        <constructor-arg name="lastName" value="Wolters"/>
+        <constructor-arg name="email" value="kwoltersa@google.es"/>
+        <constructor-arg name="companyName" value="Shuffledrive"/>
+    </bean>
+
+    <bean id="person12" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Meredeth"/>
+        <constructor-arg name="lastName" value="Bedward"/>
+        <constructor-arg name="email" value="mbedwardb@uiuc.edu"/>
+        <constructor-arg name="companyName" value="Meeveo"/>
+    </bean>
+
+    <bean id="person13" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Aloin"/>
+        <constructor-arg name="lastName" value="Rigglesford"/>
+        <constructor-arg name="email" value="arigglesfordc@cafepress.com"/>
+        <constructor-arg name="companyName" value="Skyble"/>
+    </bean>
+
+    <bean id="person14" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Petunia"/>
+        <constructor-arg name="lastName" value="Chevolleau"/>
+        <constructor-arg name="email" value="pchevolleaud@cnn.com"/>
+        <constructor-arg name="companyName" value="Zoombeat"/>
+    </bean>
+
+    <bean id="person15" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Sunshine"/>
+        <constructor-arg name="lastName" value="Haggerty"/>
+        <constructor-arg name="email" value="shaggertye@webnode.com"/>
+        <constructor-arg name="companyName" value="Digitube"/>
+    </bean>
+
+    <bean id="person16" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Eberto"/>
+        <constructor-arg name="lastName" value="Keaves"/>
+        <constructor-arg name="email" value="ekeavesf@tumblr.com"/>
+        <constructor-arg name="companyName" value="Voonte"/>
+    </bean>
+
+    <bean id="person17" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Tasha"/>
+        <constructor-arg name="lastName" value="Shemwell"/>
+        <constructor-arg name="email" value="tshemwellg@prlog.org"/>
+        <constructor-arg name="companyName" value="Brainbox"/>
+    </bean>
+
+    <bean id="person18" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Philomena"/>
+        <constructor-arg name="lastName" value="Diloway"/>
+        <constructor-arg name="email" value="pdilowayh@opensource.org"/>
+        <constructor-arg name="companyName" value="Zoozzy"/>
+    </bean>
+
+    <bean id="person19" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Raymond"/>
+        <constructor-arg name="lastName" value="Behnecke"/>
+        <constructor-arg name="email" value="rbehneckei@zdnet.com"/>
+        <constructor-arg name="companyName" value="Realmix"/>
+    </bean>
+
+    <bean id="person21" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Edie"/>
+        <constructor-arg name="lastName" value="Pledger"/>
+        <constructor-arg name="email" value="epledgerk@chron.com"/>
+        <constructor-arg name="companyName" value="Voonder"/>
+    </bean>
+
+    <bean id="person22" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Brooke"/>
+        <constructor-arg name="lastName" value="Ratcliff"/>
+        <constructor-arg name="email" value="bratcliffl@dailymotion.com"/>
+        <constructor-arg name="companyName" value="Livetube"/>
+    </bean>
+
+    <bean id="person23" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Kristy"/>
+        <constructor-arg name="lastName" value="Burnsyde"/>
+        <constructor-arg name="email" value="kburnsydem@dailymotion.com"/>
+        <constructor-arg name="companyName" value="Oyoloo"/>
+    </bean>
+
+    <bean id="person24" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Vinnie"/>
+        <constructor-arg name="lastName" value="Arp"/>
+        <constructor-arg name="email" value="varpn@github.io"/>
+        <constructor-arg name="companyName" value="Talane"/>
+    </bean>
+
+    <bean id="person25" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Diana"/>
+        <constructor-arg name="lastName" value="Wickrath"/>
+        <constructor-arg name="email" value="dwickratho@liveinternet.ru"/>
+        <constructor-arg name="companyName" value="Ooba"/>
+    </bean>
+
+    <bean id="person26" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Gasper"/>
+        <constructor-arg name="lastName" value="Gane"/>
+        <constructor-arg name="email" value="gganep@usnews.com"/>
+        <constructor-arg name="companyName" value="Jabbersphere"/>
+    </bean>
+
+    <bean id="person27" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Jere"/>
+        <constructor-arg name="lastName" value="Maberley"/>
+        <constructor-arg name="email" value="jmaberleyq@photobucket.com"/>
+        <constructor-arg name="companyName" value="Digitube"/>
+    </bean>
+
+    <bean id="person29" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Haze"/>
+        <constructor-arg name="lastName" value="Manske"/>
+        <constructor-arg name="email" value="hmanskes@trellian.com"/>
+        <constructor-arg name="companyName" value="Katz"/>
+    </bean>
+
+    <bean id="person30" class="com.stepik.zad4.domain.Person">
+        <constructor-arg name="firstName" value="Juline"/>
+        <constructor-arg name="lastName" value="Merchant"/>
+        <constructor-arg name="email" value="jmerchantt@123-reg.co.uk"/>
+        <constructor-arg name="companyName" value="Browsetype"/>
+    </bean>
+
+</beans>
