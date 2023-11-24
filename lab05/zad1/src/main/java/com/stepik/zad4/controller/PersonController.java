@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,12 +35,12 @@ public class PersonController {
     }
 
     @PostMapping
-    public Person addPerson(Person person) {
+    public Person addPerson(@RequestBody Person person) {
         return personService.addPerson(person);
     }
 
     @PutMapping("/{index}")
-    public Person editPerson(@PathVariable int index, Person person) {
+    public Person editPerson(@PathVariable int index, @RequestBody Person person) {
         return personService.editPerson(index, person);
     }
 
