@@ -1,0 +1,44 @@
+<html xmlns:th="https://www.thymeleaf.org">
+  <body>
+    <div th:if="${message}">
+      <h2 th:text="${message}" />
+    </div>
+    <div>
+      <form
+        method="POST"
+        enctype="multipart/form-data"
+        action="/"
+      >
+        <table>
+          <tr>
+            <td>File to upload:</td>
+            <td>
+              <input
+                type="file"
+                name="file"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                value="Upload"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div>
+        <h3>Dodane pliki:</h3>
+        <ol th:each="file : ${addedFiles}">
+          <li>
+            <span th:text="${file.toString()}">Nazwa pliku</span>
+            <a th:href="@{'files/' + ${file.toString()}}">Pobierz</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
