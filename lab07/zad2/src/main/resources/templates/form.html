@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <h1>Create user form</h1>
+    <form
+      method="post"
+      th:action="@{/create}"
+      th:object="${user}"
+    >
+      <div th:if="${#fields.hasErrors()}">
+        <span style="color: red">Resolve errors below!</span>
+      </div>
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        th:field="*{name}"
+      />
+      <span
+        th:if="${#fields.hasErrors('name')}"
+        th:errors="*{name}"
+        style="color: red"
+      >
+        Name Error
+      </span>
+      <br />
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        th:field="*{age}"
+      />
+      <span
+        th:if="${#fields.hasErrors('age')}"
+        th:errors="*{age}"
+        style="color: red"
+      >
+        Age Error
+      </span>
+      <br />
+      <label for="userType">User type:</label>
+      <select th:field="*{userType}">
+        <option
+          th:each="userType : ${T(com.stepik.zad2.User.UserType).values()}"
+          th:value="${userType}"
+          th:text="${userType}"
+        >
+          UserType
+        </option>
+      </select>
+      <span
+        th:if="${#fields.hasErrors('userType')}"
+        th:errors="*{userType}"
+        style="color: red"
+      >
+        User type Error
+      </span>
+      <br />
+      <input
+        type="submit"
+        value="Submit"
+      />
+    </form>
+    <a href="/list">All users</a>
+  </body>
+</html>
